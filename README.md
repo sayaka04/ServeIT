@@ -103,7 +103,7 @@ Follow these steps in order to set up your environment:
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/sayaka04/servelt.git
+git clone https://github.com/sayaka04/serveit.git
 cd servelt
 ````
 
