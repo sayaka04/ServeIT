@@ -23,8 +23,8 @@
                                     <div class="gallery-item-wrapper" data-item-id="6">
                                         <a href="{{ route('getFile2', $file->file_path) }}"
                                             target="_blank" class="gallery-item d-block shadow-sm">
-                                            <div class="overlay">{{ $file->file_name }}</div>
-                                            <p><small>{{ $file->file_description }}</small></p>
+                                            <div class="overlay text-dark">{{ $file->file_name }}</div>
+                                            <p class="text-dark"><small>{{ $file->file_description }}</small></p>
 
                                             @if(in_array(pathinfo($file->file_path, PATHINFO_EXTENSION), ['jpg', 'jpeg', 'png', 'gif', 'bmp', 'svg']))
                                             <img src="{{ route('getFile2', $file->file_path) }}" alt="{{ $file->file_name }}" class="img-fluid">
@@ -59,8 +59,8 @@
 
                                     <div class="gallery-item-wrapper" data-item-id="{{ $link->id }}">
                                         <a href="{{ $link->url }}" target="_blank" class="gallery-item d-block shadow-sm text-primary">
-                                            <div class="overlay">{{ $link->url }}</div>
-                                            <p><small>{{ ucfirst($link->type) }}</small></p>
+                                            <div class="overlay text-dark">{{ $link->url }}</div>
+                                            <p class="text-dark"><small>{{ ucfirst($link->type) }}</small></p>
                                         </a>
                                         @if(Auth::user()->is_technician)
                                         <div class="d-flex justify-content-center mt-2">

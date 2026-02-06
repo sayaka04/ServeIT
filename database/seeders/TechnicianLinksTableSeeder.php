@@ -13,15 +13,15 @@ class TechnicianLinksTableSeeder extends Seeder
      */
     public function run(): void
     {
-        DB::table('technician_links')->insert([
-            [
-                'technician_id' => 2,
-                'url' => 'https://web.facebook.com/JFMARKFIXGADGET?_rdc=1&_rdr#',
-                'type' => 'facebook',
-                'is_deleted' => 0,
-                'created_at' => '2025-09-25 14:53:36',
-                'updated_at' => '2025-09-25 14:53:36',
-            ],
-        ]);
+        // DB::table('technician_links')->insert([
+        //     [
+        //         'technician_id' => 2,
+        //         'url' => '',
+        //         'type' => 'facebook',
+        //         'is_deleted' => 0,
+        //         'created_at' => '2025-09-25 14:53:36',
+        //         'updated_at' => '2025-09-25 14:53:36',
+        //     ],
+        // ]);
     }
 }
